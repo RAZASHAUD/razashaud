@@ -2,17 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Database, Brain, Zap, Star, Settings, Users, Lightbulb } from 'lucide-react';
 
+// 🔹 Icons Mapping
 const icons = {
   'Programming Languages': <Code className="text-primary mr-4 shrink-0" size={28} />,
-  'Frameworks & Libraries': <Zap className="text-primary mr-4 shrink-0" size={28} />,
-  'Databases': <Database className="text-primary mr-4 shrink-0" size={28} />,
+  'Machine Learning & AI': <Brain className="text-primary mr-4 shrink-0" size={28} />,
+  'Electrical Engineering': <Zap className="text-primary mr-4 shrink-0" size={28} />,
+  'Tools & Software': <Settings className="text-primary mr-4 shrink-0" size={28} />,
   'Core Competencies': <Lightbulb className="text-primary mr-4 shrink-0" size={28} />,
-  'Data Science': <Brain className="text-primary mr-4 shrink-0" size={28} />,
-  'Technologies': <Settings className="text-primary mr-4 shrink-0" size={28} />,
-  'Tools': <Star className="text-primary mr-4 shrink-0" size={28} />,
   'Soft Skills': <Users className="text-primary mr-4 shrink-0" size={28} />,
 };
 
+// 🔹 Section Header
 const SectionHeader = ({ title, subtitle }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
@@ -26,13 +26,64 @@ const SectionHeader = ({ title, subtitle }) => (
   </motion.div>
 );
 
-const SkillsSection = ({ skills }) => {
+const SkillsSection = () => {
+
+  // ✅ UPDATED SKILLS FROM YOUR RESUME + LINKEDIN
+  const skills = {
+    'Programming Languages': ['Python', 'C', 'C++', 'MATLAB', 'Arduino C'],
+
+    'Machine Learning & AI': [
+      'TensorFlow',
+      'Scikit-learn',
+      'NumPy',
+      'Pandas',
+      'OpenCV',
+      'YOLOv5',
+      'CNN',
+      'Computer Vision'
+    ],
+
+    'Electrical Engineering': [
+      'Power Systems',
+      'Electrical Machines',
+      'Control Systems',
+      'Substation Systems',
+      'Industrial Automation'
+    ],
+
+    'Tools & Software': [
+      'ETAP',
+      'ANSYS',
+      'Arduino IDE',
+      'VS Code',
+      'Jupyter Notebook',
+      'Git & GitHub'
+    ],
+
+    'Core Competencies': [
+      'Machine Learning',
+      'IoT Development',
+      'Embedded Systems',
+      'Data Analysis',
+      'Object-Oriented Programming',
+      'DSA'
+    ],
+
+    'Soft Skills': [
+      'Problem Solving',
+      'Team Collaboration',
+      'Communication',
+      'Leadership',
+      'Adaptability'
+    ]
+  };
+
   return (
     <section id="skills" className="py-24 sm:py-32 section-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader 
           title="Technical Skills" 
-          subtitle="Comprehensive expertise across programming, data science, and engineering technologies."
+          subtitle="Strong foundation in Electrical Engineering, Machine Learning, and Software Development."
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -52,7 +103,9 @@ const SkillsSection = ({ skills }) => {
 
               <div className="flex flex-wrap gap-2">
                 {skillList.map((skill) => (
-                  <span key={skill} className="skill-tag">{skill}</span>
+                  <span key={skill} className="skill-tag">
+                    {skill}
+                  </span>
                 ))}
               </div>
             </motion.div>
