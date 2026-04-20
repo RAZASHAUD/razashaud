@@ -37,7 +37,7 @@ const HeroSection = ({ onResumeDownload, onScrollToSection }) => {
             </motion.h1>
 
             <motion.p variants={itemVariants} className="text-xl md:text-2xl mb-4 text-blue-200">
-              Electrical Engineer • Python Developer • ML Enthusiast
+              Electrical Engineering Student | GATE 2026 AIR 2139 | AI & Machine Learning Enthusiast
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex items-center text-blue-200 mb-6">
@@ -46,9 +46,10 @@ const HeroSection = ({ onResumeDownload, onScrollToSection }) => {
             </motion.div>
 
             <motion.p variants={itemVariants} className="text-lg text-blue-100 mb-8 max-w-xl">
+              
               Hi, I'm Raza Shaud
-              Electrical Engineering Student | GATE 2026 AIR 2139  
-              AI & Machine Learning Enthusiast | Power Systems
+              Electrical Engineering Student | GATE 2026 AIR 2139 | Marks: 42/100 | Ranked among top ~3–4% of 65,801 candidates. 
+              AI & Machine Learning Enthusiast
               I build intelligent systems combining Electrical Engineering and AI to solve real-world problems.
         
             </motion.p>
