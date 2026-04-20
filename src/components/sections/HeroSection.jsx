@@ -47,10 +47,8 @@ const HeroSection = ({ onResumeDownload, onScrollToSection }) => {
 
             <motion.p variants={itemVariants} className="text-lg text-blue-100 mb-8 max-w-xl">
               Hi, I'm Raza Shaud
-
               Electrical Engineering Student | GATE 2026 AIR 2139  
               AI & Machine Learning Enthusiast | Power Systems
-
               I build intelligent systems combining Electrical Engineering and AI to solve real-world problems.
         
             </motion.p>
