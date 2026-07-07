@@ -30,7 +30,7 @@ const SkillsSection = () => {
 
   // ✅ UPDATED SKILLS FROM YOUR RESUME + LINKEDIN
   const skills = {
-    'Programming Languages': ['Python', 'C', 'C++', 'Arduino C'],
+    'Programming Languages': ['Python', 'C', 'C++'],
 
     'Machine Learning': [
       'TensorFlow',
