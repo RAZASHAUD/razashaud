@@ -37,20 +37,18 @@ const HeroSection = ({ onResumeDownload, onScrollToSection }) => {
             </motion.h1>
 
             <motion.p variants={itemVariants} className="text-xl md:text-2xl mb-4 text-blue-200">
-              Electrical Engineering Student | GATE 2026 AIR 2139 | AI & Machine Learning Enthusiast
+              Electrical Engineer | GATE 2026 AIR 2139 | Machine Learning & Computer Vision | Embedded Systems & IoT
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex items-center text-blue-200 mb-6">
               <MapPin size={18} className="mr-2" />
-              Kolkata, India
+              Kolkata, India, 700024
             </motion.div>
 
             <motion.p variants={itemVariants} className="text-lg text-blue-100 mb-8 max-w-xl">
               
               Hi, I'm Raza Shaud
-              Electrical Engineering Student | GATE 2026 AIR 2139 | Marks: 42/100 | Ranked among top ~3–4% of 65,801 candidates. 
-              AI & Machine Learning Enthusiast
-              I build intelligent systems combining Electrical Engineering and AI to solve real-world problems.
+              Electrical Engineering graduate (B.Tech, 2026) and GATE 2026 qualifier (AIR 2139) with hands-on experience across machine learning, computer vision, embedded systems, and power engineering. Delivered 4 projects achieving up to 96.5% model accuracy and 99% process automation; completed 3 internships spanning ML development, steel manufacturing (SAIL), and thermal power generation (DVC). Published 3 research papers, including an IEEE Best Paper Award on PMSM motor design for electric vehicles.
         
             </motion.p>
 
