@@ -29,7 +29,7 @@ const projectsData = [
     title: 'Solar-Powered Robotic Cable Monitoring System',
     description: 'Developed a solar-powered mobile robot for cable insulation monitoring using camera sensors and a CNN model achieving 96.5% fault detection accuracy.',
     technologies: ['Arduino, Solar PV, CNN, OpenCV'],
-    metrics: '94% F1 Score'
+    metrics: '96.5% Accuracy'
   },
   {
     title: 'Human & AI Voice Detection',
@@ -63,7 +63,7 @@ const experiencesData = [
     title: 'Trainee',
     company: 'SAIL',
     period: 'November – December 2024',
-    description: 'Specialized training in industrial motors systems.',
+    description: 'Studied industrial automation processes and plant electrical systems in a large-scale steel manufacturing environment',
     skills: ['Industrial Motors', 'Automation']
   },
   {
@@ -71,7 +71,7 @@ const experiencesData = [
     company: 'DVC',
     period: 'June – July 2024',
     description: 'Comprehensive training in substation automation, power plant operations, and security protocols.',
-    skills: ['Substation Automation', 'Power Plant Operations', 'Security Systems']
+    skills: ['Shadowed senior engineers at a major thermal power generation plant, documenting daily operations and plant electrical systems']
   }
 ];
 
