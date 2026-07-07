@@ -5,11 +5,11 @@ import { Code, Database, Brain, Zap, Star, Settings, Users, Lightbulb } from 'lu
 // 🔹 Icons Mapping
 const icons = {
   'Programming Languages': <Code className="text-primary mr-4 shrink-0" size={28} />,
-  'Machine Learning & AI': <Brain className="text-primary mr-4 shrink-0" size={28} />,
+  'Machine Learning': <Brain className="text-primary mr-4 shrink-0" size={28} />,
   'Electrical Engineering': <Zap className="text-primary mr-4 shrink-0" size={28} />,
-  'Tools & Software': <Settings className="text-primary mr-4 shrink-0" size={28} />,
-  'Core Competencies': <Lightbulb className="text-primary mr-4 shrink-0" size={28} />,
-  'Soft Skills': <Users className="text-primary mr-4 shrink-0" size={28} />,
+  'Embedded Systems & IoT': <Settings className="text-primary mr-4 shrink-0" size={28} />,
+  'Computer Vision & Signal Processing': <Lightbulb className="text-primary mr-4 shrink-0" size={28} />,
+  'Tools & Software': <Users className="text-primary mr-4 shrink-0" size={28} />,
 };
 
 // 🔹 Section Header
@@ -30,51 +30,48 @@ const SkillsSection = () => {
 
   // ✅ UPDATED SKILLS FROM YOUR RESUME + LINKEDIN
   const skills = {
-    'Programming Languages': ['Python', 'C', 'C++', 'MATLAB', 'Arduino C'],
+    'Programming Languages': ['Python', 'C', 'C++', 'Arduino C'],
 
-    'Machine Learning & AI': [
+    'Machine Learning': [
       'TensorFlow',
       'Scikit-learn',
       'NumPy',
       'Pandas',
-      'OpenCV',
-      'YOLOv5',
+      'Deep Learning',
       'CNN',
-      'Computer Vision'
+      'Random Forest',
+      'SVM',
+      'Data Preprocessing'
     ],
 
     'Electrical Engineering': [
-      'Power Systems',
-      'Electrical Machines',
-      'Control Systems',
-      'Substation Systems',
-      'Industrial Automation'
+      'ETAP', 
+      'PMSM', 
+      'Industrial Automation', 
+      'MATLAB', 
+      'ANSYS'
+    ],
+
+    'Embedded Systems & IoT': [
+      'Arduino (Uno)', 
+      'Microcontroller Programming', 
+      'Sensor Interfacing', 
+      'GSM Communication', 
+      'Real-Time Monitoring', 
+      'Hardware Prototyping'
+    ],
+
+    'Computer Vision & Signal Processing': [
+      'OpenCV', 
+      'YOLOv5', 
+      'Image Processing', 
+      'MFCC Feature Extraction'
     ],
 
     'Tools & Software': [
-      'ETAP',
-      'ANSYS',
-      'Arduino IDE',
-      'VS Code',
-      'Jupyter Notebook',
-      'Git & GitHub'
-    ],
-
-    'Core Competencies': [
-      'Machine Learning',
-      'IoT Development',
-      'Embedded Systems',
-      'Data Analysis',
-      'Object-Oriented Programming',
-      'DSA'
-    ],
-
-    'Soft Skills': [
-      'Problem Solving',
-      'Team Collaboration',
-      'Communication',
-      'Leadership',
-      'Adaptability'
+      'Git',
+      'Arduino IDE', 
+      'Microsoft Office (Excel, Word, PowerPoint)'
     ]
   };
 
