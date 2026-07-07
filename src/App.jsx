@@ -28,7 +28,7 @@ const projectsData = [
   {
     title: 'Solar-Powered Robotic Cable Monitoring System',
     description: 'Developed a solar-powered mobile robot for cable insulation monitoring using camera sensors and a CNN model achieving 96.5% fault detection accuracy.',
-    technologies: ['Arduino, Solar PV, CNN, OpenCV'],
+    technologies: ['Arduino', 'Solar PV', 'CNN', 'OpenCV'],
     metrics: '96.5% Accuracy'
   },
   {
