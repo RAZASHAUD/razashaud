@@ -64,12 +64,14 @@ const experiencesData = [
     company: 'SAIL',
     period: 'November – December 2024',
     description: 'Studied industrial automation processes and plant electrical systems in a large-scale steel manufacturing environment',
+    skills: ['Automation']
   },
   {
     title: 'Power Plant Operations Trainee',
     company: 'DVC',
     period: 'June – July 2024',
     description: 'Shadowed senior engineers at a major thermal power generation plant, documenting daily operations and plant electrical systems',
+    skills: ['Thermal power generation']
   }
 ];
 
