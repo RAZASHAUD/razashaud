@@ -41,10 +41,7 @@ const EducationSection = () => {
             </div>
             <p className="text-text-secondary mb-4">
               Ghani Khan Choudhury Institute of Engineering & Technology, Malda
-            </p>
-            <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full inline-block text-sm font-semibold">
-              Available from June 2026
-            </div>
+            </p>            
           </motion.div>
 
           <motion.div
