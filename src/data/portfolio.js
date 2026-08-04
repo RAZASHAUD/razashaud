@@ -15,6 +15,7 @@ export const profile = {
   linkedin: 'https://linkedin.com/in/raza-shaud',
   github: 'https://github.com/RAZASHAUD',
   resume: '/Raza_Shaud_Resume.pdf',
+  resumeAts: '/Raza_Shaud_Resume_ATS.docx',
   rollNo: '264102509',
   formspreeId: 'https://formspree.io/f/mbgrrgll',     // optional formspree.io form ID for the contact form
 };
