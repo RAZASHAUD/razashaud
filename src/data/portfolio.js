@@ -156,7 +156,7 @@ export const experience = [
 
 export const education = [
   { degree: 'M.Tech, Electronics and Electrical Engineering', school: 'Indian Institute of Technology Guwahati', period: '2026 – 2028', detail: 'Specialization: Systems, Control and Automation' },
-  { degree: 'B.Tech, Electrical Engineering', school: 'Ghani Khan Choudhury Institute of Engineering and Technology, Malda', period: '2022 – 2026', detail: 'CGPA 7.40 / 10' },
+  { degree: 'B.Tech, Electrical Engineering', school: 'Ghani Khan Choudhury Institute of Engineering and Technology, Malda', period: '2022 – 2026', detail: 'CGPA 7.54 / 10' },
   { degree: 'Senior Secondary (WBCHSE)', school: 'West Bengal Council of Higher Secondary Education', period: '2022', detail: '71.80%' },
   { degree: 'Secondary (WBBSE)', school: 'West Bengal Board of Secondary Education', period: '2020', detail: '65.40%' },
 ];
