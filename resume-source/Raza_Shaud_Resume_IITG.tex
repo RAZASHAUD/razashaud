@@ -1,0 +1,178 @@
+%==============================================================================
+%  Raza Shaud — Résumé (IIT Guwahati one-page format)
+%  Compile with: pdflatex Raza_Shaud_Resume_IITG.tex   (or upload to Overleaf)
+%
+%  ATS notes: single column, real selectable text, standard serif face, no
+%  text inside images, no header/footer, standard section names. Keep it that
+%  way when you edit — those are the things resume parsers choke on.
+%
+%  Optional: drop a file named iitg-logo.png next to this file and it appears
+%  in the header automatically. Without it the header simply sits flush left.
+%==============================================================================
+\documentclass[a4paper,9pt]{extarticle}
+\linespread{0.99}
+
+\usepackage[left=0.6in,right=0.6in,top=0.45in,bottom=0.4in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{mathptmx}   % Times: narrow, universally installed, and parses cleanly in ATS text extraction
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+
+% ---- Section headings: small caps with a rule underneath -------------------
+\titleformat{\section}
+  {\vspace{-4pt}\scshape\large}{}{0em}{}[\vspace{-6pt}\rule{\textwidth}{0.8pt}\vspace{-4pt}]
+\titlespacing*{\section}{0pt}{8pt}{3pt}
+
+% ---- Helpers ---------------------------------------------------------------
+% Entry with a bold title on the left and an italic date on the right
+\newcommand{\entry}[2]{\textbf{#1}\hfill\textit{#2}\\}
+% Second line: italic role/stack on the left, location or link on the right
+\newcommand{\subentry}[2]{\textit{#1}\hfill#2\\[-7pt]}
+
+\newenvironment{points}
+  {\begin{itemize}[label=--,leftmargin=1.2em,topsep=1pt,itemsep=1pt,parsep=0pt]}
+  {\end{itemize}\vspace{1pt}}
+
+\newenvironment{entries}
+  {\begin{itemize}[label=$\bullet$,leftmargin=1em,topsep=1pt,itemsep=2pt,parsep=0pt]}
+  {\end{itemize}}
+
+\begin{document}
+
+%============================== HEADER ========================================
+\IfFileExists{iitg-logo.png}{%
+  \begin{minipage}{0.10\textwidth}\includegraphics[width=0.85\linewidth]{iitg-logo.png}\end{minipage}%
+  \hspace{4pt}%
+  \newlength{\headmain}\setlength{\headmain}{0.55\textwidth}%
+}{\newlength{\headmain}\setlength{\headmain}{0.66\textwidth}}
+\begin{minipage}{\headmain}
+  {\LARGE\textbf{Raza Shaud}}\\[3pt]
+  Roll No.: 264102509\\
+  M.Tech --- Electronics and Electrical Engineering\\
+  Specialization: Systems, Control and Automation\\
+  Indian Institute of Technology, Guwahati
+\end{minipage}
+\hfill
+\begin{minipage}{0.32\textwidth}
+  \raggedleft
+  +91-7439505623\\
+  \href{mailto:raza@iitg.ac.in}{raza@iitg.ac.in}\\
+  \href{mailto:rshaudx3@gmail.com}{rshaudx3@gmail.com}\\
+  \href{https://github.com/RAZASHAUD}{Github} $\vert$ \href{https://razashaud.vercel.app}{Portfolio}\\
+  \href{https://linkedin.com/in/raza-shaud}{linkedin.com/in/raza-shaud}
+\end{minipage}
+
+\vspace{2pt}
+
+%============================== EDUCATION =====================================
+\section{Education}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|c|c|}
+\hline
+\textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+\hline
+M.Tech. (EEE) & Indian Institute of Technology, Guwahati & Pursuing & 2026--2028\\
+\hline
+B.Tech. (Electrical Engineering) & Ghani Khan Choudhury Institute of Engg. and Tech., Malda & 7.40 & 2022--2026\\
+\hline
+Senior Secondary & WBCHSE & 71.80\% & 2022\\
+\hline
+Secondary & WBBSE & 65.40\% & 2020\\
+\hline
+\end{tabularx}
+
+%============================== EXPERIENCE ====================================
+\section{Experience}
+\begin{entries}
+
+\item \entry{Tech Solutions Inc.}{May 2025 -- Jul. 2025}
+      \subentry{Machine Learning Intern}{Kolkata, India}
+      \begin{points}
+        \item Optimized \textbf{8} machine learning scripts, improving model prediction speed by \textbf{30\%}.
+        \item Tested and validated classification models with a 4-person team.
+      \end{points}
+
+\item \entry{Steel Authority of India Limited (SAIL)}{Nov. 2024 -- Dec. 2024}
+      \subentry{Internship Trainee --- Industrial Automation \& Plant Electrical Systems}{Bokaro, India}
+      \begin{points}
+        \item Studied plant electrical systems, protection schemes and automation processes across an integrated steel works.
+      \end{points}
+
+\item \entry{Damodar Valley Corporation (DVC)}{Jun. 2024 -- Jul. 2024}
+      \subentry{Internship Trainee --- Thermal Power Generation, Switchgear \& Protection}{Mejia, India}
+      \begin{points}
+        \item Documented daily operations, switchgear arrangements and protection settings on an operating thermal generating station.
+      \end{points}
+
+\end{entries}
+
+%============================== PROJECTS ======================================
+\section{Projects}
+\begin{entries}
+
+\item \entry{Solar-Powered Robotic Cable Monitoring System}{Aug. 2025 -- Apr. 2026}
+      \subentry{B.Tech Major Project $\vert$ Arduino, Yolo v8, CNN, OpenCV, Solar PV}{\href{https://github.com/RAZASHAUD}{Github}}
+      \begin{points}
+        \item Built an autonomous inspection robot on an \textbf{Arduino Uno} with \textbf{12V/20W solar PV} supply and camera-based insulation monitoring over \textbf{500 m} of cable.
+        \item Trained a \textbf{Yolo} fault classifier on \textbf{1,300+} cable images reaching \textbf{96.5\% accuracy} and \textbf{78\%} fewer false positives; tuned the power budget for \textbf{8 h} of continuous field operation.
+      \end{points}
+
+\item \entry{Saline Level Monitoring and Alert System (IoT)}{Jan. 2025 -- Apr. 2025}
+      \subentry{Self Project $\vert$ Arduino Uno, Ultrasonic Sensor, GSM Module}{\href{https://github.com/RAZASHAUD}{Github}}
+      \begin{points}
+        \item Interfaced an ultrasonic sensor with an \textbf{Arduino} microcontroller in \textbf{Embedded C} to track fluid level to \textbf{2 cm} precision; validated over \textbf{50 hours} with zero missed empty-bottle events.
+        \item Implemented a dual alert path (buzzer + \textbf{GSM SMS} over UART to 3 contacts), reducing simulated response time by \textbf{75\%} and nursing workload by \textbf{40\%}.
+      \end{points}
+
+\item \entry{Human vs. AI Voice Classification System}{Sep. 2024 -- Nov. 2024}
+      \subentry{Self Project $\vert$ Python, Scikit-learn, Digital Signal Processing}{\href{https://github.com/RAZASHAUD}{Github}}
+      \begin{points}
+        \item Extracted \textbf{MFCC} features from \textbf{1,500+} audio samples with spectral-gating noise reduction (\textbf{65\%} less interference) to build a binary classifier at \textbf{89\% accuracy}.
+        \item Deployed a \textbf{Random Forest} on a 15-D feature vector, beating an SVM baseline by \textbf{12\%} via 5-fold cross-validation.
+      \end{points}
+
+\end{entries}
+
+%============================== SKILLS ========================================
+\section{Technical Skills}
+\begin{itemize}[label=$\bullet$,leftmargin=1em,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item \textbf{Programming}: C, C++, Python
+  \item \textbf{Embedded \& Hardware}: Arduino Uno, Sensor Interfacing, Hardware Prototyping \& Debugging
+  \item \textbf{Signal Processing \& ML}: DSP, Feature Extraction, Yolo v8, CNN, OpenCV, Scikit-learn, NumPy, Pandas
+  \item \textbf{EDA \& Tools}: MATLAB/Simulink, ANSYS, ETAP, Git, Arduino IDE, Linux*, \LaTeX \hfill \textit{* Elementary proficiency}
+\end{itemize}
+
+%============================== PUBLICATIONS ==================================
+\section{Publications}
+\begin{itemize}[label=$\bullet$,leftmargin=1em,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item \textbf{IEEE GIEST 2024, Best Paper Award}: Dual Rotor Single Stator 6-Phase PMSM for Smart Electric Vehicles
+  \item \textbf{Tech Research Chronicles (IAST), 2025}: Noise Filtration and Voice Discrimination: Case Studies and Results
+  \item \textbf{PEIS-2026, GKCIET Malda}: Intelligent Remote Monitoring of Low Voltage Cable Insulation Fault
+\end{itemize}
+
+%============================== POR ===========================================
+\section{Positions of Responsibility}
+\begin{itemize}[label=$\bullet$,leftmargin=1em,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item \textbf{Class Representative (CR)}, Dept. of Electrical Engineering, GKCIET Malda \hfill \textit{2024 -- 2026}
+  \item \textbf{Organizing Committee Member}, PEIS-2026 International Conference, GKCIET Malda \hfill \textit{Apr. 2026}
+\end{itemize}
+
+%============================== ACHIEVEMENTS ==================================
+\section{Achievements}
+\begin{itemize}[label=$\bullet$,leftmargin=1em,topsep=2pt,itemsep=1pt,parsep=0pt]
+  \item \textbf{GATE 2026 (Electrical Engineering)}: All India Rank \textbf{2139}, admitted to M.Tech at IIT Guwahati \hfill \textit{2026}
+  \item \textbf{Scored 9.0/10 in VLSI Design}, 6th Semester core course, B.Tech, GKCIET Malda \hfill \textit{2025}
+  \item \textbf{100 Days of Code: Complete Python Pro Bootcamp}, Udemy Certification \hfill \textit{2024}
+\end{itemize}
+
+\end{document}
