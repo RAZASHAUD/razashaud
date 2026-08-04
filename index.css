@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Instrument-bench tokens. Dark = scope screen, light = printed datasheet ---- */
+:root {
+  --ink: 9 13 18;
+  --panel: 17 23 31;
+  --line: 33 45 58;
+  --fg: 229 237 243;
+  --muted: 137 152 169;
+  --trace: 45 212 226;   /* CH1 — cyan scope trace */
+  --live: 245 166 35;    /* CH2 — amber */
+  --grid: rgba(255, 255, 255, 0.045);
+  --radius: 10px;
+}
+
+html.light {
+  --ink: 245 247 250;
+  --panel: 255 255 255;
+  --line: 219 226 234;
+  --fg: 13 20 28;
+  --muted: 88 102 119;
+  --trace: 10 116 145;
+  --live: 172 92 8;
+  --grid: rgba(13, 20, 28, 0.05);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: rgb(var(--ink));
+  color: rgb(var(--fg));
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: rgb(var(--trace) / 0.28); }
+
+:focus-visible {
+  outline: 2px solid rgb(var(--trace));
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Graph-paper backdrop: the page is a bench surface, not a canvas */
+.grid-field {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.panel {
+  background: rgb(var(--panel));
+  border: 1px solid rgb(var(--line));
+  border-radius: var(--radius);
+}
+
+.panel-hover { transition: border-color .2s ease, transform .2s ease; }
+.panel-hover:hover { border-color: rgb(var(--trace) / 0.5); transform: translateY(-2px); }
+
+/* Measurement label: how instruments annotate a channel */
+.readout {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgb(var(--muted));
+}
+
+.chip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgb(var(--line));
+  color: rgb(var(--muted));
+  background: rgb(var(--ink) / 0.6);
+  transition: color .18s ease, border-color .18s ease, background .18s ease;
+}
+.chip-on { color: rgb(var(--trace)); border-color: rgb(var(--trace) / 0.55); background: rgb(var(--trace) / 0.08); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  border-radius: 8px; font-weight: 600; font-size: .9375rem;
+  padding: .7rem 1.15rem; transition: all .18s ease; border: 1px solid transparent;
+}
+.btn-solid { background: rgb(var(--trace)); color: rgb(var(--ink)); }
+.btn-solid:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.btn-ghost { border-color: rgb(var(--line)); color: rgb(var(--fg)); background: rgb(var(--panel)); }
+.btn-ghost:hover { border-color: rgb(var(--trace) / .6); color: rgb(var(--trace)); }
+
+.link-underline { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgb(var(--trace) / .5); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
