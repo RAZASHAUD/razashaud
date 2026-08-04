@@ -8,17 +8,15 @@ export const profile = {
   role: 'M.Tech, Systems · Control · Automation — IIT Guwahati',
   location: 'IIT Guwahati, Assam, India',
   // TODO: change this one line if you are looking for something else.
-  available: 'M.Tech 2026–28 · open to summer 2027 internships and research collaborations',
+  available: 'M.Tech 2026–28 · open to internships, Full Time Role, research collaborations',
   email: 'rshaudx3@gmail.com',
   emailInstitute: 'raza@iitg.ac.in',
   phone: '+91 74395 05623',
   linkedin: 'https://linkedin.com/in/raza-shaud',
   github: 'https://github.com/RAZASHAUD',
   resume: '/Raza_Shaud_Resume.pdf',
-  resumeAts: '/Raza_Shaud_Resume_ATS.docx',
   rollNo: '264102509',
-  calendar: '',        // optional Cal.com / Calendly link
-  formspreeId: '',     // optional formspree.io form ID for the contact form
+  formspreeId: 'https://formspree.io/f/mbgrrgll',     // optional formspree.io form ID for the contact form
 };
 
 // The visitor picks a track; the page reorders itself around what they hire for.
@@ -62,7 +60,7 @@ export const projects = [
     ],
     stack: ['Arduino', 'YOLO v8', 'CNN', 'OpenCV', 'Python', 'Solar PV'],
     demo: 'threshold',
-    links: [], // TODO: add { label: 'Code', url: 'https://github.com/RAZASHAUD/…' }
+    links: [https://github.com/RAZASHAUD], // TODO: add { label: 'Code', url: 'https://github.com/RAZASHAUD/…' }
   },
   {
     id: 'saline',
@@ -86,7 +84,7 @@ export const projects = [
       '40% reduction in nursing monitoring workload',
     ],
     stack: ['Arduino Uno', 'Embedded C', 'Ultrasonic Sensor', 'GSM Module', 'UART'],
-    links: [],
+    links: [https://github.com/RAZASHAUD],
   },
   {
     id: 'voice',
@@ -111,7 +109,7 @@ export const projects = [
     ],
     stack: ['Python', 'Scikit-learn', 'MFCC', 'Random Forest', 'DSP'],
     demo: 'audio',
-    links: [],
+    links: [https://github.com/RAZASHAUD],
   },
 ];
 
@@ -156,9 +154,9 @@ export const experience = [
 
 export const education = [
   { degree: 'M.Tech, Electronics and Electrical Engineering', school: 'Indian Institute of Technology Guwahati', period: '2026 – 2028', detail: 'Specialization: Systems, Control and Automation' },
-  { degree: 'B.Tech, Electrical Engineering', school: 'Ghani Khan Choudhury Institute of Engineering and Technology, Malda', period: '2022 – 2026', detail: 'CGPA 7.54 / 10' },
-  { degree: 'Senior Secondary (WBCHSE)', school: 'West Bengal Council of Higher Secondary Education', period: '2022', detail: '71.80%' },
-  { degree: 'Secondary (WBBSE)', school: 'West Bengal Board of Secondary Education', period: '2020', detail: '65.40%' },
+  { degree: 'B.Tech, Electrical Engineering', school: 'Ghani Khan Choudhury Institute of Engineering and Technology, Malda', period: '2022 – 2026' },
+  { degree: 'Senior Secondary (WBCHSE)', school: 'West Bengal Council of Higher Secondary Education', period: '2022' },
+  { degree: 'Secondary (WBBSE)', school: 'West Bengal Board of Secondary Education', period: '2020' },
 ];
 
 export const publications = [
@@ -168,28 +166,27 @@ export const publications = [
     kind: 'Best Paper Award',
     featured: true,
     note: 'Machine topology and performance characteristics for electric vehicle traction.',
-    url: '', // TODO: IEEE Xplore link if available
+    url: 'https://ieeexplore.ieee.org/document/10960113', // TODO: IEEE Xplore link if available
   },
   {
     title: 'Noise Filtration and Voice Discrimination: Case Studies and Results',
     venue: 'Tech Research Chronicles (IAST), Vol. 1 Issue 2, 2025',
     kind: 'Journal',
     note: 'ISSN 3049-205X. Spectral-gating noise reduction and MFCC-based discrimination between human and synthetic voice.',
-    url: '',
+    url: 'https://drive.google.com/file/d/12TpDa0jKitrarOSNDMWmOJoZD-_TueRp/view?usp=drive_link',
   },
   {
     title: 'Intelligent Remote Monitoring of Low Voltage Cable Insulation Fault',
     venue: 'PEIS-2026, GKCIET Malda',
     kind: 'Conference',
     note: 'International Conference on Power, Environment and Intelligent Systems, April 2026.',
-    url: '',
+    url: 'https://drive.google.com/file/d/1BaZPNuAtWbu3QiNDepIExd2Qh71l9xR_/view?usp=drive_link',
   },
 ];
 
 export const achievements = [
-  { title: 'GATE 2026 (Electrical Engineering) — All India Rank 2139', note: 'Admitted to M.Tech at IIT Guwahati', year: '2026' },
-  { title: 'Scored 9.0 / 10 in VLSI Design', note: '6th semester core course, B.Tech, GKCIET Malda', year: '2025' },
-  { title: '100 Days of Code: Complete Python Pro Bootcamp', note: 'Udemy certification', year: '2024' },
+  { title: 'GATE 2026 (Electrical Engineering) — All India Rank 2139' },
+    { title: '100 Days of Code: Complete Python Pro Bootcamp', note: 'Udemy certification', year: '2024' },
 ];
 
 export const responsibilities = [
@@ -199,7 +196,7 @@ export const responsibilities = [
 
 export const extras = {
   languages: ['English', 'Hindi', 'Bengali'],
-  interests: ['Swimming', 'Chess', 'Cricket', 'Carrom'],
+  interests: ['Swimming', 'Chess', 'Cricket'],
 };
 
 // Answers the ask-widget uses when no API key is configured.
